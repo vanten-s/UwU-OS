@@ -6,17 +6,18 @@ using SystemCommands;
 using System.Runtime.CompilerServices;
 using Finder;
 using System.Security.Cryptography.X509Certificates;
-
 using Cosmos.System.FileSystem.VFS;
 using Cosmos.System.FileSystem;
 using System.IO;
 using System.Linq;
 using System.Data.SqlTypes;
+using UwU;
 
 namespace FSC
 {
     class fsc
     {
+
         public void ld()
         {
             Console.WriteLine("WIP");
@@ -98,7 +99,7 @@ namespace FSC
 
         public void rm(string filename)
         {
-            
+
             try
             {
                 File.Delete(@$"0:\{filename}");
@@ -123,5 +124,7 @@ namespace FSC
                 Console.WriteLine($" '{DirName}' might not be a directory");
             }
         }
+
+
     }
 }

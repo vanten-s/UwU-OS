@@ -14,9 +14,9 @@ namespace USF
 
         public (string, string) ComParser(string UnParsedCommand = "")
         {
-        string CommandInput = "";
-        string ParsedCommand = "";
-        int CommandEnd = 0;
+            string CommandInput = "";
+            string ParsedCommand = "";
+            int CommandEnd = 0;
 
             for (int i = 0; i < UnParsedCommand.Length; i++)
             {
@@ -34,11 +34,11 @@ namespace USF
 
             }
 
-            for(int i = CommandEnd + 1; i < UnParsedCommand.Length; i++)
+            for (int i = CommandEnd + 1; i < UnParsedCommand.Length; i++)
             {
-                CommandInput+= UnParsedCommand[i];
+                CommandInput += UnParsedCommand[i];
             }
-         return (ParsedCommand, CommandInput);
+            return (ParsedCommand, CommandInput);
         }
     }
 }

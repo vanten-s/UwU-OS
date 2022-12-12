@@ -23,23 +23,18 @@ namespace Finder
                 case "y":
                     sCom.y(AppData.Item2);
                     break;
-
                 case "clear":
                     sCom.clear();
                     break;
-
                 case "math":
                     sCom.math(AppData.Item2);
                     break;
-
                 case "echo":
                     sCom.echo(AppData.Item2);
                     break;
-
                 case "poweroff":
                     sCom.poweroff();
                     break;
-
                 case "ld":
                     fsc.ld();
                     break;
@@ -60,6 +55,9 @@ namespace Finder
                     break;
                 case "rmdir":
                     fsc.rmdir(AppData.Item2);
+                    break;
+                case "neofetch":
+                    sCom.neofetch();
                     break;
 
                 default:

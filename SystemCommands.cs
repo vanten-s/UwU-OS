@@ -9,7 +9,7 @@ using System.Linq;
 using System.Globalization;
 using System.Diagnostics.Contracts;
 using System.Reflection.Metadata.Ecma335;
-
+using UwU;
 
 namespace SystemCommands
 {
@@ -41,12 +41,12 @@ namespace SystemCommands
         }
 
         public float math(string input)
-        {   
+        {
             float product = 0;
             string Number1 = "";
             string Number2 = "";
             char CalcMethod = 'e';
-            if (string.IsNullOrEmpty(input)) 
+            if (string.IsNullOrEmpty(input))
             {
                 Console.WriteLine("Nothing to calculate");
 
@@ -60,7 +60,7 @@ namespace SystemCommands
                         Number1 += input[i];
                         continue;
                     }
-                    else if(!new[] { '*', '/', '+', '-' }.Contains(input[i]) && CalcMethod != 'e')
+                    else if (!new[] { '*', '/', '+', '-' }.Contains(input[i]) && CalcMethod != 'e')
                     {
                         Number2 += input[i];
                     }
@@ -71,7 +71,7 @@ namespace SystemCommands
                         continue;
                     }
 
-                    
+
                 }
 
                 switch (CalcMethod)
@@ -99,12 +99,12 @@ namespace SystemCommands
 
                         break;
                 }
-               
-            }
-            
-            return product;
 
             }
+
+            return product;
+
+        }
 
         public void echo(string message)
         {
@@ -116,5 +116,13 @@ namespace SystemCommands
             Sys.Power.Shutdown();
         }
 
+        public void neofetch()
+        {
+            uwu UwU = new uwu();
+            Console.WriteLine($@"{UwU.UwUOS}");
+            Console.WriteLine("The shitties OS you've ever come across");
+            Console.WriteLine("btw check your ram");
         }
+
     }
+}
